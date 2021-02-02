@@ -1,0 +1,12 @@
+[Unit]
+Description=Start aisalexa Skill along with Nginx and letsencrypt companions
+After=docker.service
+Requires=docker.service
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/aisalexa/nginx
+ExecStart=/opt/aisalexa/nginx/start.sh
+
+[Install]
+WantedBy=multi-user.target
