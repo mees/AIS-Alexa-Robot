@@ -1,0 +1,25 @@
+{
+  "intents": [
+    {
+      "intent": "RobotCommandIntent",
+      "slots": [
+        {
+          "name": "command",
+          "type": "AMAZON.SearchQuery"
+        }
+      ],
+      "samples": [
+        "robot {command}"
+      ]
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}
