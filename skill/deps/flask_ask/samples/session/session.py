@@ -1,8 +1,8 @@
 import logging
 import os
 
-from flask import Flask, json, render_template
-from flask_ask import Ask, question, request, session, statement
+from flask import Flask, render_template
+from flask_ask import Ask, question, session, statement
 
 app = Flask(__name__)
 ask = Ask(app, "/")

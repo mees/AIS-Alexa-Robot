@@ -3,7 +3,7 @@ import os
 import re
 
 from flask import Flask
-from flask_ask import Ask, question, request, session, statement
+from flask_ask import Ask, question, session, statement
 from six.moves.urllib.request import urlopen
 
 app = Flask(__name__)

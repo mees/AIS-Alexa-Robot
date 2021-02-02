@@ -1,6 +1,5 @@
 import base64
 from datetime import datetime
-import os
 import posixpath
 
 from OpenSSL import crypto

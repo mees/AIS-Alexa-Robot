@@ -11,7 +11,7 @@ from flask import _app_ctx_stack, current_app, json
 from flask import request as flask_request
 from jinja2 import BaseLoader, ChoiceLoader, TemplateNotFound
 from werkzeug.contrib.cache import SimpleCache
-from werkzeug.local import LocalProxy, LocalStack
+from werkzeug.local import LocalProxy
 import yaml
 
 from . import logger, verifier
@@ -923,7 +923,6 @@ class Ask(object):
         return partial(view_func, *arg_values)
 
     def _get_slot_value(self, slot_object):
-        slot_name = slot_object.name
         slot_value = getattr(slot_object, "value", None)
         resolutions = getattr(slot_object, "resolutions", None)
 

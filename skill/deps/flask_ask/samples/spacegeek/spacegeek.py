@@ -3,7 +3,7 @@ import os
 from random import randint
 
 from flask import Flask, render_template
-from flask_ask import Ask, question, request, session, statement
+from flask_ask import Ask, question, statement
 
 app = Flask(__name__)
 ask = Ask(app, "/")

@@ -7,10 +7,10 @@ from typing import Optional
 import uuid
 
 from flask import Flask
-from flask_ask import Ask, question, request, session, statement
+from flask_ask import Ask, question, session, statement
 from flask_ask.models import _Response
 import roslibpy
-from twisted.internet import reactor, task
+from twisted.internet import reactor
 
 app = Flask(__name__)
 ask = Ask(app, "/")

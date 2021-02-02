@@ -1,10 +1,9 @@
 import logging
 import os
 
-from flask import Flask, json, render_template
-from flask_ask import Ask, buy, context, logger, question, refund, request, session, statement, upsell
+from flask import Flask, render_template
+from flask_ask import Ask, buy, context, logger, question, refund, request, session, statement
 from model import Product
-import requests
 
 app = Flask(__name__)
 ask = Ask(app, "/")
@@ -48,7 +47,6 @@ def buy_intent(product_name):
         session.attributes[PRODUCT_KEY] = productId
     else:
         return statement("I didn't find a product {}".format(product_name))
-        raise NotImplementedError()
     return buy(productId).simple_card("Welcome", buy_card)
 
     # return upsell(product,'get this great product')
@@ -56,7 +54,6 @@ def buy_intent(product_name):
 
 @ask.intent("RefundSkillItemIntent", mapping={"product_name": "ProductName"})
 def refund_intent(product_name):
-    refund_card = render_template("refund_card")
     logger.info("PRODUCT: {}".format(product_name))
 
     products = Product(context.System.apiAccessToken)

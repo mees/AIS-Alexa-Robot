@@ -6,7 +6,7 @@ import re
 
 import aniso8601
 from flask import Flask, json, render_template
-from flask_ask import Ask, question, request, session, statement
+from flask_ask import Ask, question, session, statement
 from six.moves.urllib.parse import urlencode
 from six.moves.urllib.request import urlopen
 

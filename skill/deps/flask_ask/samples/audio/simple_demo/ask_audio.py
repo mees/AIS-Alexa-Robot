@@ -1,8 +1,8 @@
 import logging
 import os
 
-from flask import Flask, json, render_template
-from flask_ask import Ask, audio, context, current_stream, question, request, session, statement
+from flask import Flask, json
+from flask_ask import Ask, audio, current_stream, question
 
 app = Flask(__name__)
 ask = Ask(app, "/")
