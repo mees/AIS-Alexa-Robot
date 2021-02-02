@@ -1,7 +1,7 @@
 # AIS Alexa Robot Skill
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-This repository contains an Alexa skill to control and interact with a robot via [ROS](https://www.ros.org/) topics.
+This repository contains an Alexa skill to control and interact with a robot via [ROS](https://www.ros.org/) topics. Concretely, the current skill implementation was used for picking-and-placing tabletops objects from natural language. More information at the [project page](http://speechrobot.cs.uni-freiburg.de/).
 
 ## Reference
 If you find the code helpful please consider citing our work
