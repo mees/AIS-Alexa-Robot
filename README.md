@@ -65,4 +65,4 @@ the updated docker container to be built
 For academic usage, the code is released under the [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) license. For any commercial purpose, please contact the authors.
 
 ## Authorship
-This code was developed by [Henrich Kohlkhorst](http://www2.informatik.uni-freiburg.de/~henkolk/) and [Oier Mees](www.oiermees.com) at the University of Freiburg, Germany.
+This code was developed by [Henrich Kohlkhorst](http://www2.informatik.uni-freiburg.de/~henkolk/) and [Oier Mees](http://www.oiermees.com) at the University of Freiburg, Germany.
