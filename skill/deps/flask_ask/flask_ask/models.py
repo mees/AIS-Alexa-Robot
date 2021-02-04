@@ -170,7 +170,8 @@ class question(_Response):
 
 
 class buy(_Response):
-    def __init__(self, productId=None):
+    def __init__(self, speech, productId=None):
+        super().__init__(speech)
         self._response = {
             "shouldEndSession": True,
             "directives": [
@@ -185,7 +186,8 @@ class buy(_Response):
 
 
 class refund(_Response):
-    def __init__(self, productId=None):
+    def __init__(self, speech, productId=None):
+        super().__init__(speech)
         self._response = {
             "shouldEndSession": True,
             "directives": [
@@ -200,7 +202,8 @@ class refund(_Response):
 
 
 class upsell(_Response):
-    def __init__(self, productId=None, msg=None):
+    def __init__(self, speech, productId=None, msg=None):
+        super().__init__(speech)
         self._response = {
             "shouldEndSession": True,
             "directives": [
@@ -215,7 +218,8 @@ class upsell(_Response):
 
 
 class delegate(_Response):
-    def __init__(self, updated_intent=None):
+    def __init__(self, speech, updated_intent=None):
+        super().__init__(speech)
         self._response = {"shouldEndSession": False, "directives": [{"type": "Dialog.Delegate"}]}
 
         if updated_intent:
@@ -231,6 +235,7 @@ class elicit_slot(_Response):
     """
 
     def __init__(self, slot, speech, updated_intent=None):
+        super().__init__(speech)
         self._response = {
             "shouldEndSession": False,
             "directives": [
@@ -255,6 +260,7 @@ class confirm_slot(_Response):
     """
 
     def __init__(self, slot, speech, updated_intent=None):
+        super().__init__(speech)
         self._response = {
             "shouldEndSession": False,
             "directives": [
@@ -277,6 +283,7 @@ class confirm_intent(_Response):
     """
 
     def __init__(self, speech, updated_intent=None):
+        super().__init__(speech)
         self._response = {
             "shouldEndSession": False,
             "directives": [
