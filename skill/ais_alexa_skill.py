@@ -52,6 +52,7 @@ class RosReply(object):
 
 class CanFulfillResponse(_Response):
     def __init__(self, can_fulfill, slot_infos):
+        super().__init__("")
         can_fulfill_msg = "YES" if can_fulfill else "NO"
 
         self._response = {"canFulfillIntent": {"canFulfill": can_fulfill_msg, "slots": []}}
