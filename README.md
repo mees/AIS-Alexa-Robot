@@ -6,7 +6,7 @@
 This repository contains an Alexa skill to control and interact with a robot via [ROS](https://www.ros.org/) topics. Concretely, the current skill implementation was used for picking-and-placing tabletops objects from natural language. More information at the [project page](http://speechrobot.cs.uni-freiburg.de/).
 
 <p align="center">
-  <img src="http://speechrobot.cs.uni-freiburg.de/images/motivation.png" width="75%"/>
+  <img src="http://speechrobot.cs.uni-freiburg.de/images/motivation.png" width="65%"/>
 </p>
 
 ## Reference
