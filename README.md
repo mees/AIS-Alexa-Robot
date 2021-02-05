@@ -1,7 +1,13 @@
 # AIS Alexa Robot Skill
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/mees/AIS-Alexa-Robot.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/mees/AIS-Alexa-Robot/context:python)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/mees/AIS-Alexa-Robot.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/mees/AIS-Alexa-Robot/alerts/)
 
 This repository contains an Alexa skill to control and interact with a robot via [ROS](https://www.ros.org/) topics. Concretely, the current skill implementation was used for picking-and-placing tabletops objects from natural language. More information at the [project page](http://speechrobot.cs.uni-freiburg.de/).
+
+<p align="center">
+  <img src="http://speechrobot.cs.uni-freiburg.de/images/motivation.png" width="75%"/>
+</p>
 
 ## Reference
 If you find the code helpful please consider citing our work
@@ -15,7 +21,7 @@ If you find the code helpful please consider citing our work
 }
 ```
 ```
-@INPROCEEDINGS{mees20icra_placements,
+@inproceedings{mees20icra_placements,
 author = {Oier Mees and Alp Emek and Johan Vertens and Wolfram Burgard},
 title = {Learning Object Placements For Relational Instructions by Hallucinating Scene Representations},
 booktitle = {Proceedings of the IEEE International Conference on Robotics and Automation  (ICRA)},
